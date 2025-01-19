@@ -36,7 +36,7 @@ export default class Param {
   get(callback, failedCallback) {
     var paramClient = new Service({
       ros: this.ros,
-      name: '/rosapi/get_param',
+      name: 'rosapi/get_param',
       serviceType: 'rosapi/GetParam'
     });
 
@@ -69,7 +69,7 @@ export default class Param {
   set(value, callback, failedCallback) {
     var paramClient = new Service({
       ros: this.ros,
-      name: '/rosapi/set_param',
+      name: 'rosapi/set_param',
       serviceType: 'rosapi/SetParam'
     });
 
@@ -89,7 +89,7 @@ export default class Param {
   delete(callback, failedCallback) {
     var paramClient = new Service({
       ros: this.ros,
-      name: '/rosapi/delete_param',
+      name: 'rosapi/delete_param',
       serviceType: 'rosapi/DeleteParam'
     });
 
